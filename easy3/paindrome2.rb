@@ -1,6 +1,5 @@
 def real_palindrome?(string)
   newstring = string.downcase.gsub(/[^0-9a-z]/,'')
-  puts newstring
   newstring == newstring.reverse
 end
 

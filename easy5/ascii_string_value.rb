@@ -1,7 +1,5 @@
 def ascii_value(str)
-
-  str.chars.inject(0) { |ascii_sum, char| ascii_sum +char.ord }
-
+  str.chars.inject(0) { |ascii_sum, char| ascii_sum + char.ord }
 end
 
 p ascii_value('Four score') == 984
