@@ -17,6 +17,7 @@ def before_midnight(time_str)
   (24 * 60) - (hh * 60 + mm)
 end
 
+
 p after_midnight('00:00') == 0
 p before_midnight('00:00') == 0
 p after_midnight('12:34') == 754
