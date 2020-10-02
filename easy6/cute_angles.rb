@@ -12,5 +12,5 @@ def dms(flt)
 
 end
 
-p dms(76.73) == %(76°43'48")
+p dms(76.73) 
 p dms(360)
