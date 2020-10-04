@@ -6,7 +6,7 @@ def find_fibonacci_index_by_length(int)
     break if fib[index].to_s.length >= int
     index += 1
   end
-  index + 1
+  fib.length
 
 end
 
