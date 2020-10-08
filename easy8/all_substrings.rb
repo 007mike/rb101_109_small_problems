@@ -10,3 +10,4 @@ def substrings(str)
 end
 
 p substrings('abcde')
+p substrings('hello-madam-did-madam-goodbye')
