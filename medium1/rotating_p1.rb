@@ -1,6 +1,10 @@
+#require 'pry'
+#require 'pry-byebug'
+
 def rotate_array(arr)
   new_arr = arr.dup
   new_arr << new_arr.shift
+   new_arr
 end
 
 def rotate_string(str)
