@@ -1,10 +1,11 @@
-def lights(number)
+def lights_toggle(number)
   lights_arr = Array.new(number, 0)
   1.upto(number) do |n|
     1.upto(number) do |x|
       toggle = n * x
-      next if toggle > number
+      break if toggle > number
       lights_arr[toggle - 1] == 1 ? lights_arr[toggle -1] = 0 : lights_arr[toggle - 1] = 1
+      p lights_arr
     end
   end
 
@@ -13,5 +14,5 @@ def lights(number)
   end.compact
 end
 
-p lights(5)
-p lights(1000)
+p lights_toggle(5)
+p lights_toggle(10)
