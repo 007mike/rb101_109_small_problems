@@ -11,7 +11,7 @@ def minilang(str)
     when 'DIV'   then register /= stack.pop
     when 'MOD'   then register %= stack.pop
     when 'POP'   then register = stack.pop
-    else register = cmd.to_i
+    else              register = cmd.to_i
     end
   end
 end
