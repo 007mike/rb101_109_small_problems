@@ -20,12 +20,8 @@ earth.
 MSG
 
 sentences = text.split(/\.|\?|!/)
-
-sorted = sentences.sort_by do |sentence|
-            sentence.length
-         end
-
-word_count = sorted.last.split.count
+longest = sentences.sort_by { |sentence| sentence.length }
+word_count = longest.last.split.count
 
 puts "The longest sentence is #{word_count} words long." 
-puts "#{sorted.last}"
+puts "#{longest.last}"
