@@ -1,4 +1,4 @@
-TEXT = <<-MSG 
+text = <<-MSG 
 But, in a larger sense, we can not dedicate, we can not
 consecrate, we can not hallow this ground. The brave
 men, living and dead, who struggled here, have
@@ -19,14 +19,13 @@ the people, for the people, shall not perish from the
 earth.
 MSG
 
-  sentences = TEXT.split(/\.|\?|!/)
-  sorted = sentences.sort_by do |sentence|
-              sentence.length
-           end
+sentences = text.split(/\.|\?|!/)
 
+sorted = sentences.sort_by do |sentence|
+            sentence.length
+         end
 
-word_count = sentences.map do |sentence|
-                sentence.split.count
-             end
-puts "The longest sentence is #{sorted.last.length} words long." 
+word_count = sorted.last.split.count
+
+puts "The longest sentence is #{word_count} words long." 
 puts "#{sorted.last}"
