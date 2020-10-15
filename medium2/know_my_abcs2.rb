@@ -1,7 +1,7 @@
 PAIRS = %w(bo xk dq cp na gt re fs jw hu vi ly zm)
 
 def block_word?(str)
-  PAIRS.all? { |pair| str.downcase.count(pair) <= 1 }
+  PAIRS.all? { |pair| str.downcase.count(pair) < 2 }
 end
 
 p block_word?('BATCH') == true
