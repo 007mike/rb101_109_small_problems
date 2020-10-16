@@ -1,3 +1,4 @@
+require "Date"
 def triangle(a, b, c)
   if valid_triangle(a, b, c)
     return :acute if [a, b, c].all?(0..89)

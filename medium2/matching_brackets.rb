@@ -1,8 +1,8 @@
 def balanced?(str)
   score = 0
   str.chars do |char|
-    score +=1 if char.include?('(')
-    score -=1 if char.include?(')')
+    score +=1 if char == '('
+    score -=1 if char == ')'
     return false if score < 0
   end
   score.zero?
